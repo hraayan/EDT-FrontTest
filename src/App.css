@@ -1,6 +1,6 @@
 
 html,body{
-  background: url('../images/food-wall.jpg');
+  background: url('./images/food-wall.jpg');
   
   background-repeat: repeat;
   

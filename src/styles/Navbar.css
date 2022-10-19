@@ -8,9 +8,10 @@
 	box-sizing: border-box;
 	font-family: "Josefin Sans", sans-serif;
 }
+
 /* declarando variables de colores */
 :root {
-	--mainColor: #29335c;
+	--mainColor: #002fdb;
 	--mainColorLight: #00af98e7;
 	--secondaryColor: #00f0e8e9;
 	--textColor: rgb(17, 16, 22);
@@ -34,6 +35,16 @@ h1 {
 	margin-bottom: .6%;
 	font-weight: bold;
 	text-shadow: 4px 4px 6px rgb(255, 255, 255);
+}
+
+h1:hover {
+	color: var(--mainColor);
+}
+
+.no-shadow {
+	text-shadow: none;
+	margin-top: 3px;
+	font-size: 3.2rem;
 }
 
 nav a {
@@ -85,7 +96,7 @@ nav {
 		gap: 1.5rem;
 		background-color: var(--mainColorLight);
 		transition: 1s;
-		transform: translateX(-100vh);
+		transform: translateX(-115vh);
 	}
 
 	header .responsive_nav {
