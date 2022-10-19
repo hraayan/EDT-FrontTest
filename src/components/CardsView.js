@@ -1,17 +1,16 @@
 import React from "react";
 import '../styles/CardsView.css';
-import restImage from '../images/restaurant.jpg';
-import {AiFillStar} from 'react-icons/ai';
 import Card from "./Card";
 
 
 
-function CardView(){
+function CardView({restaurants = []}){
   return(
     <div className="principal-container">
-      <Card />
-      <Card />
-      <Card />
+      {restaurants.map((restaurant,id) =>(
+        <Card key={id} restaurant={restaurant}/>
+      ))}
+      
     </div>
   );
 }

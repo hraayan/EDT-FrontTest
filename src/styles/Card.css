@@ -1,8 +1,8 @@
 /* cards de la iformacion de los restaurantes */
 .cards {
   background-color: aliceblue;
-  width: 46vh;
-  height: max-content;
+  width: 47.2vh;
+  min-height: max-content;
   border-radius: 15px;
   margin: 20px;
   padding: 10px;
@@ -39,6 +39,9 @@
   font-size: large;
   text-align: left;
 }
+.email{
+  font-size: 1rem;
+}
 
 /* div imagen, rating, botones */
 .info2 {
@@ -74,7 +77,7 @@
   align-items: center;
   text-align: center;
   overflow-wrap: break-word;
-  margin-top: 3%;
+  margin-top: 4%;
 }
 .raiting-icon{
   color: rgb(255, 183, 0);  
@@ -105,4 +108,10 @@
   margin-left: 5%;
   position: absolute;
   bottom: 0px;
+}
+
+@media only screen and (max-width: 1650px) {
+  .social-btns{
+    right: 4%;
+  }
 }

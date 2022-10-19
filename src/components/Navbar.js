@@ -10,7 +10,7 @@ function Navbar(){
 
   return(
     <header>
-      <h1>Melp App <span className="no-shadow">🍽️</span></h1>
+      <a href="/" id="app-title"><h1>Melp App <span className="no-shadow">🍽️</span></h1></a>     
       <nav ref={navRef}>
         <a href="/#">Home</a>
         <a href="/#">All Restaurantes</a>

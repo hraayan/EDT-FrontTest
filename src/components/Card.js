@@ -1,8 +1,9 @@
 import React from "react";
-import restImage from '../images/restaurant.jpg';
+import restImage from '../images/restimg.jpg';
 import {AiFillStar} from 'react-icons/ai';
 import '../styles/Card.css';
-function Card(){
+function Card( {restaurant}){
+
   //funcion para cargar los botones de facebook -- script directo de facebook docs
   (function() {
     var element = document.createElement('script'); 
@@ -16,14 +17,16 @@ function Card(){
   //// fin script facebook
 
   return(
+    
     <div className="cards">
         {/* div de informacion de restaurant */}
+        
         <div className="info">
-          <h3 className="titles">Barajas, Bahena and Kano</h3>
-          <p className="contact-info">Web Page: www.web.page</p>
-          <p className="contact-info">Email: restaurant@mail.com</p>
-          <p className="contact-info">Phone: 5456884</p>
-          <p className="contact-info">Address: Av peridosimo no. 27378 col ajhfdggy</p>
+          <h3 className="titles">{restaurant.name}</h3>
+          <p className="contact-info">Web Page: {restaurant.contact.site}</p>
+          <p className="contact-info email">Email: {restaurant.contact.email}</p>
+          <p className="contact-info">Phone: {restaurant.contact.phone}</p>
+          <p className="contact-info">Address: {restaurant.address.street}, {restaurant.address.city}, {restaurant.address.state}</p>
           
         </div>
         {/* fin */}
