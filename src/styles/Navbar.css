@@ -104,7 +104,7 @@ nav {
 		gap: 1.5rem;
 		background-color: var(--mainColorLight);
 		transition: 1s;
-		transform: translateX(-115vh);
+		transform: translateX(-150vh);
 	}
 
 	header .responsive_nav {

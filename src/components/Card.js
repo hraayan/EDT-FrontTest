@@ -19,14 +19,14 @@ function Card( {restaurant}){
   return(
     
     <div className="cards">
-        {/* div de informacion de restaurant */}
         
+        {/* div de informacion de restaurant */}
         <div className="info">
           <h3 className="titles">{restaurant.name}</h3>
-          <p className="contact-info">Web Page: {restaurant.contact.site}</p>
+          <a href={restaurant.contact.site} className="contact-info">{restaurant.contact.site}</a>
           <p className="contact-info email">Email: {restaurant.contact.email}</p>
           <p className="contact-info">Phone: {restaurant.contact.phone}</p>
-          <p className="contact-info">Address: {restaurant.address.street}, {restaurant.address.city}, {restaurant.address.state}</p>
+          <p className="contact-info">{restaurant.address.street}, {restaurant.address.city}, {restaurant.address.state}</p>
           
         </div>
         {/* fin */}
@@ -38,10 +38,9 @@ function Card( {restaurant}){
           </div>
           <div className="raiting">
             <span id="rate-text">Rating: </span>
-            <AiFillStar className="raiting-icon"/>
-            <AiFillStar className="raiting-icon"/>
-            <AiFillStar className="raiting-icon"/>
-            <AiFillStar className="raiting-icon"/>
+            <section> {/*section para mostrar iconos de estrellas, segun el numero de rating */}
+              {Array.from({ length: restaurant.rating }, (_, i) => <AiFillStar className="raiting-icon" />)}
+            </section> {/*section para mostrar iconos de estrellas, segun el numero de rating */}
           </div>
           <div className="social-btns">
             {/* botones de facebook */}

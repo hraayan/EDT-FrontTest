@@ -25,7 +25,7 @@
     width: 60vh;
     margin: 20px;
     padding: 10px;
-    height: max-content;
+    height: fit-content;
   }
 
   .principal-container {
@@ -38,7 +38,7 @@
     width: 59vh;
     margin: 20px;
     padding: 10px;
-    height: max-content;
+    height: 323px;
   }
   .principal-container {
     justify-content: center;

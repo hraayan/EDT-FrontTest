@@ -7,7 +7,8 @@ import Card from "./Card";
 function CardView({restaurants = []}){
   return(
     <div className="principal-container">
-      {restaurants.map((restaurant,id) =>(
+      {!restaurants ? <h1>LOADING ...</h1> : restaurants.map((restaurant,id) =>(
+        
         <Card key={id} restaurant={restaurant}/>
       ))}
       

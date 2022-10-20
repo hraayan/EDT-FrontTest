@@ -3,6 +3,7 @@
   background-color: aliceblue;
   width: 47.2vh;
   min-height: max-content;
+  
   border-radius: 15px;
   margin: 20px;
   padding: 10px;
@@ -114,4 +115,5 @@
   .social-btns{
     right: 4%;
   }
+  
 }
